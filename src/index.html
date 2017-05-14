@@ -2,13 +2,52 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AdinfostWeb</title>
+  <title>Adinfost</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Adinfost</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Add advertisement</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row well">
+    <form class="form-inline">
+      <label class="sr-only" for="search-input">Search</label>
+      <div class="input-group input-group-lg">
+        <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+        <input type="text" class="form-control" id="search-input" placeholder="Search" width="800px">
+      </div>
+
+      <label class="sr-only" for="location-id">Location</label>
+      <div class="input-group input-group-lg">
+        <div class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        </div>
+        <input type="text" class="form-control" id="location-id" placeholder="Location">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg sharp-border">Search</button>
+    </form>
+  </div>
+</div>
+
+<app-root> Loading...</app-root>
 </body>
 </html>

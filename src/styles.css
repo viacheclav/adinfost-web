@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+#search-input {
+  width: 400px;
+}
+
+#location-id {
+  width: 400px;
+}
+
+.sharp-border {
+  border-radius: 0;
+}
+
+* {
+  border-radius: 0 !important;
+}
